@@ -1,0 +1,7 @@
+<h3>리스트</h3>
+<h1>취미 : <span th:each="list : ${hobbies}" th:text="${list}+'  '"></span></h1>
+<!-- ex03 -- parameter ListHobbies : [독서, 운동, 여행, 잠] : 콘솔창에 로그가 list 는 [ ] 에 묶여 나온다. -->
+
+<h3>배열</h3>
+<h1>취미 : <span th:each="hobby : ${arr}" th:text="${hobby}+'  '"></span></h1>
+

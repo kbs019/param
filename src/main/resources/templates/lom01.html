@@ -1,0 +1,9 @@
+<h1>lom01.html</h1>
+<p>이름 : <span th:text="${lom.name}"></span></p>	<!-- thymeleaf 속성인 th 의 text 를 꺼낸다.  -->
+<p>나이 : <span th:text="${lom.age}"></span></p>		<!-- 꺼내는 값은 lom 이라는 이름의 model 에 저장된 변수명을 적어 사용 -->
+<p>메시지 : <span th:text="${lom.memo}"></span></p>
+
+[[${lom}]]
+<!-- Lombok(name=춘식, age=1, memo=hahaha) 이 출력된다. -->
+
+<p th:text="'이름 : '+${lom.name}"></p>

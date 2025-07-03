@@ -1,0 +1,73 @@
+<h3>form ==> ex01</h3>
+<form th:action="@{/param/ex01}" method="post">
+  <!-- th:action 속성의 값은 링크이므로 링크 표현식 사용해야 한다. -->
+  <label for="id">아이디</label>
+  <input type="text" id="id" name="id" required /> <br />
+  <label for="password">비밀번호</label>
+  <input type="password" id="password" name="password" required /> <br />
+  <button type="submit">전송</button>
+</form>
+
+<hr color="orange" />
+
+<h3>form ==> ex02</h3>
+<!-- th:action="요청 url (도착 view 아님!!)" -->
+<form th:action="@{/param/ex02}" method="post">
+  <!-- /param/ex02 라는 뷰 페이지 경로가 아닌 uri 를 요청하겠다. -->
+  <label for="id">아이디</label>
+  <input type="id" id="id" name="id" required /> <br />
+  <label for="password">비밀번호</label>
+  <input type="password" id="password" name="password" required /> <br />
+  <button type="submit">전송</button>
+</form>
+
+<hr color="skyblue" />
+
+<h3>form ==> ex03</h3>
+<form th:action="@{/param/ex03}" method="post">
+  <label>취미</label> <br />
+  <input type="checkbox" id="hobby1" name="hobbies" value="독서" />
+  <label for="hobby1">독서</label>
+  <input type="checkbox" id="hobby2" name="hobbies" value="운동" />
+  <label for="hobby2">운동</label>
+  <input type="checkbox" id="hobby3" name="hobbies" value="여행" />
+  <label for="hobby3">여행</label>
+  <input type="checkbox" id="hobby4" name="hobbies" value="잠" />
+  <label for="hobby4">잠</label> <br />
+  <button type="submit">전송</button>
+</form>
+
+<hr color="red" />
+
+<h3>form ==> ex04</h3>
+<form th:action="@{/param/ex04}" method="post">
+  <label for="id">아이디</label>
+  <input type="text" id="id" name="id" requried /> <br />
+  <input type="submit" value="전송" />
+</form>
+
+<hr color="blue" />
+
+<h3>form ==> ex05</h3>
+<form th:action="@{/param/ex05}" method="post">
+  <label for="id">아이디</label>
+  <input type="text" id="id" name="id" required /> <br />
+  <button type="submit">전송</button>
+</form>
+
+<hr color="green" />
+
+<h3>form ==> ex09</h3>
+<form th:action="@{/param/ex09}" method="post" enctype="multipart/form-data">
+  <label for="id">아이디</label>
+  <input type="text" id="id" name="id" requried /> <br />
+  <label for="save">파일</label>
+  <input type="file" id="save" name="save" requried /> <br />
+  <button type="submit">전송</button>
+</form>
+<!-- enctype 을 지정해주어야 한다. : 
+		이거 없으면 "org.springframework.web.multipart.MultipartException: Current request is not a multipart request" 이런 오류 발생 -->
+
+<hr color="purple" />
+
+<h3>form ==></h3>
